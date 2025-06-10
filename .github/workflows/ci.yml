@@ -51,5 +51,4 @@ jobs:
         POSTGRES_DB: taskmanager_test
         SECRET_KEY: test-secret-key
       run: |
-        cd task-manager
         python -m pytest --cov=app tests/ 
