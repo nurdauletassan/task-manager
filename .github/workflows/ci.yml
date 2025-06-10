@@ -46,5 +46,6 @@ jobs:
         POSTGRES_PORT: 5432
         POSTGRES_DB: taskmanager_test
         SECRET_KEY: test-secret-key
+        PYTHONPATH: ${{ github.workspace }}/task-manager
       run: |
         pytest --cov=app tests/ 
